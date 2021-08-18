@@ -1,5 +1,22 @@
-function calculadora (callback) {
-}
+// function  calculadora() {
+//     this.sum = function(a, b) {
+//         return a + b;
+//     };
+//     this.sub = function(a, b) {
+//         return a - b;
+//     };
+//     this.mult = function(a, b) {
+//         return a * b;
+//     };
+//     this.div = function(a, b) {
+//         return a / b;
+//     };
+// }
+
+
+const calculadora = (callback) => (a,b) => (callback(a,b))
+
+
 
 const sum = calculadora((a, b) => a + b)
 const sub = calculadora((a, b) => a - b)
